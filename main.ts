@@ -1,6 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    _17 = _17 + 10
-})
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
     _16 = pins.digitalReadPin(DigitalPin.P16)
@@ -20,7 +17,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.pause(100)
     if (_16 == 0 && (_12 == 0 && _8 == 1)) {
         basic.showString("carte Ilian ")
-        basic.showString("" + (_17))
+        basic.showString("" + (SOMME_ILIAN))
     } else {
         if (_16 == 0 && (_12 == 1 && _8 == 0)) {
             basic.showString("carte Noah")
@@ -40,13 +37,24 @@ input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
-    _17 = _17 - 10
+    if (_16 == 0 && (_12 == 0 && _8 == 1)) {
+        SOMME_ILIAN = SOMME_ILIAN + 10
+    } else {
+        if (_16 == 0 && (_12 == 1 && _8 == 0)) {
+            SOMME_NOAH = SOMME_NOAH + 10
+        } else {
+            if (true) {
+            	
+            }
+        }
+    }
 })
+let SOMME_NOAH = 0
 let _8 = 0
 let _12 = 0
 let _16 = 0
-let _17 = 0
+let SOMME_ILIAN = 0
 pins.setPull(DigitalPin.P8, PinPullMode.PullUp)
 pins.setPull(DigitalPin.P12, PinPullMode.PullUp)
 pins.setPull(DigitalPin.P16, PinPullMode.PullUp)
-_17 = 0
+SOMME_ILIAN = 0
