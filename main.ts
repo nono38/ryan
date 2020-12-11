@@ -34,6 +34,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
     _16 = pins.digitalReadPin(DigitalPin.P16)
+    basic.showNumber(_16)
     basic.pause(100)
     basic.clearScreen()
     basic.pause(100)
