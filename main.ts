@@ -1,15 +1,31 @@
 input.onButtonPressed(Button.A, function () {
     if (_16 == 0 && (_12 == 0 && _8 == 1)) {
+        basic.showString("somme ilian")
         SOMME_ILIAN = SOMME_ILIAN - 10
+        basic.showString("-10")
+        basic.showString("total")
+        basic.showString("" + (SOMME_ILIAN))
     } else {
         if (_16 == 0 && (_12 == 1 && _8 == 0)) {
+            basic.showString("somme NOAH")
             SOMME_NOAH = SOMME_NOAH - 10
+            basic.showString("-10")
+            basic.showString("total")
+            basic.showString("" + (SOMME_NOAH))
         } else {
             if (_16 == 1 && (_12 == 1 && _8 == 0)) {
+                basic.showString("somme Ryan")
                 SOMME_RYAN = SOMME_RYAN - 10
+                basic.showString("-10")
+                basic.showString("total")
+                basic.showString("" + (SOMME_RYAN))
             } else {
                 if (_16 == 0 && (_12 == 1 && _8 == 1)) {
+                    basic.showString("somme Papa")
                     SOMME_PAPA = SOMME_PAPA - 10
+                    basic.showString("-10")
+                    basic.showString("total")
+                    basic.showString("" + (SOMME_PAPA))
                 }
             }
         }
@@ -32,21 +48,25 @@ input.onButtonPressed(Button.AB, function () {
     if (_16 == 0 && (_12 == 0 && _8 == 1)) {
         basic.showString("carte Ilian ")
         basic.pause(100)
+        basic.showString("somme Ilian ")
         basic.showString("" + (SOMME_ILIAN))
     } else {
         if (_16 == 0 && (_12 == 1 && _8 == 0)) {
             basic.showString("carte Noah")
             basic.pause(100)
+            basic.showString("somme Noah")
             basic.showString("" + (SOMME_NOAH))
         } else {
             if (_16 == 1 && (_12 == 1 && _8 == 0)) {
                 basic.showString("carte Ryan")
                 basic.pause(100)
+                basic.showString("somme Ryan")
                 basic.showString("" + (SOMME_RYAN))
             } else {
                 if (_16 == 0 && (_12 == 1 && _8 == 1)) {
                     basic.showString("carte Papa")
                     basic.pause(100)
+                    basic.showString("somme Papa")
                     basic.showString("" + (SOMME_PAPA))
                 }
             }
@@ -59,16 +79,33 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (_16 == 0 && (_12 == 0 && _8 == 1)) {
+        basic.showString("somme ilian")
+        basic.showString("" + (SOMME_ILIAN))
         SOMME_ILIAN = SOMME_ILIAN + 10
+        basic.showString("+10")
+        basic.showString("total")
+        basic.showString("" + (SOMME_ILIAN))
     } else {
         if (_16 == 0 && (_12 == 1 && _8 == 0)) {
+            basic.showString("SOMME NOAH")
             SOMME_NOAH = SOMME_NOAH + 10
+            basic.showString("+10")
+            basic.showString("total")
+            basic.showString("" + (SOMME_NOAH))
         } else {
             if (_16 == 1 && (_12 == 1 && _8 == 0)) {
+                basic.showString("SOMME Ryan")
                 SOMME_RYAN = SOMME_RYAN + 10
+                basic.showString("+10")
+                basic.showString("total")
+                basic.showString("" + (SOMME_RYAN))
             } else {
                 if (_16 == 0 && (_12 == 1 && _8 == 1)) {
+                    basic.showString("SOMME Papa")
                     SOMME_PAPA = SOMME_PAPA + 10
+                    basic.showString("+10")
+                    basic.showString("total")
+                    basic.showString("" + (SOMME_PAPA))
                 }
             }
         }
